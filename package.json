@@ -1,0 +1,20 @@
+{
+  "name": "contacts-image-converter",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Trustbot ",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "build-local": "rm -R node_modules/ && yarn install",
+    "deploy-lambda": "rm -R node_modules/ && docker run -v $(pwd):/contacts/ contacts && sls deploy"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.325.0",
+    "body-parser": "^1.18.3",
+    "canvas": "2.0.0-alpha.17",
+    "express": "^4.16.3",
+    "request": "^2.88.0",
+    "serverless-http": "^1.6.0"
+  }
+}
