@@ -7,8 +7,8 @@ const createMarkedImage = (imageUrl) => {
     const canvas = createCanvas(width, height);
     const ctx = canvas.getContext('2d');
     ctx.drawImage(image, 0, 0);
-    ctx.fillStyle = 'green';
-    ctx.fillRect(0, height - (height/4), width, (height/4));
+    ctx.fillStyle = '#2196f3';
+    ctx.fillRect(0, 0, width, (height/5));
 
     return canvas.toBuffer('image/png', {compressionLevel: 3});
   });
