@@ -12,7 +12,7 @@
   "dependencies": {
     "aws-sdk": "^2.325.0",
     "body-parser": "^1.18.3",
-    "canvas": "2.0.0-alpha.17",
+    "canvas": "2.0.0-alpha.14",
     "express": "^4.16.3",
     "request": "^2.88.0",
     "serverless-http": "^1.6.0"
